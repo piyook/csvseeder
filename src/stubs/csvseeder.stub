@@ -1,0 +1,24 @@
+<?php
+
+namespace {{NAMESPACE}};
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+use Piyook\Csvseeder\ImportDataContract;
+
+class {{CLASS_NAME}} extends Seeder
+{
+    /**
+     * Run the CSV database seeds.
+     *
+     * @return void
+     */
+    public function run(ImportDataContract $CSV)
+    {
+
+        $rows = {{COLUMN_NAMES}};
+        $table = "{{TABLE_NAME}}";
+        $CSV->import($table, $rows);
+    }
+}
