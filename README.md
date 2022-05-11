@@ -72,7 +72,7 @@ Laravel 8+
 The package is in Beta at the moment so install using Composer directly from this repo by updating your composer.json file as below (adding to the existing require-dev packages). 
 
 ```sh
-    composer require piyook/csvseeder
+    composer require --dev piyook/csvseeder
 ```
 
 
