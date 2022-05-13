@@ -69,7 +69,7 @@ Laravel 8+
 ### Installation
 <br/>
 
-The package is in Beta at the moment so install using Composer directly from this repo by updating your composer.json file as below (adding to the existing require-dev packages). 
+Install the package using composer 
 
 ```sh
     composer require --dev piyook/csvseeder
@@ -123,12 +123,12 @@ then
 ## Testing
 <br/>
 
-Orchestra Testbench would normally used to run unit and feature tests in the package but the seeder function would not seem to work in orchestra (the seeder class was not being found).
+Orchestra Testbench would normally be used to run unit and feature tests in the package but the seeder function would not work (the seeder class was not found).
 
 
-Instead a full seperate Laravel test project was created and the tests, phpunit.xml and the database/data, database/migration folders and files copied into the relevant places in the framework to set up the test environment.
+A full seperate Laravel test project was set-up and the tests, phpunit.xml and the database/data, database/migration folders and files in the package test folder copied into the relevant places in the project to set up the test environment.
 
-All Feature tests then work running with Artisan test command.
+All Feature tests work running with Artisan test command.
 
 ## Contact
 
